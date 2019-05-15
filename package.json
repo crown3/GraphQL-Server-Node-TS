@@ -1,0 +1,68 @@
+{
+  "name": "graqhql-server-demo-node-ts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "git@github.com:crown3/graqhql-server-demo-node-ts.git",
+  "author": "crown <chenjuncrown@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "cz": "git-cz",
+    "lint": "eslint --ext .ts,.tsx src",
+    "dev": "ts-node src/index.ts",
+    "dev:watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec yarn dev",
+    "prisma:deploy": "export NO_PROXY=*; prisma deploy",
+    "prisma:generate": "prisma generate"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "src/*.{ts,tsx}": [
+        "yarn lint",
+        "git add"
+      ],
+      "ignore": [
+        "**/dist/*, **/node_modules/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "graphql-yoga": "^1.17.4",
+    "jsonwebtoken": "^8.5.1",
+    "prisma": "^1.33.0",
+    "prisma-client-lib": "^1.33.0",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/github": "^5.2.10",
+    "@semantic-release/npm": "^5.1.7",
+    "@semantic-release/release-notes-generator": "^7.1.4",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^8.3.2",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "commitizen": "^3.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.1",
+    "semantic-release": "^15.13.12",
+    "ts-node": "^8.1.0"
+  }
+}
