@@ -4,9 +4,8 @@
 
 The series of projects implements a simple `Hackernews Demo`,including server
 and client, mainlyfor individuals to familiarize themselves with the development
-environment and ecology of `GraphQL`. The functions implemented include user
-registration and login, feed, feed voting, and the pagination of feed , etc. The
-main code refers to the relevant implementation of the
+environment and ecology of `GraphQL`. The functions implemented include `user registration and login`, `feed`, `feed voting`, and `the pagination of feed` ,
+etc. The main code refers to the relevant implementation of the
 [HowToGraphQL](https://www.howtographql.com) project, the series of projects is
 mainly divided into the follwing parts:
 

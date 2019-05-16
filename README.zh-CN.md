@@ -2,7 +2,7 @@
 
 [![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.GraqhQL-Server-Node-TS?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=5&branchName=master)
 
-该系列项目实现了一个简易的`Hackernews Demo`，包括服务端与客户端，主要是个人用来熟悉 `GraphQL` 相关开发环境与生态的练手项目，实现的功能包括用户注册以及登陆、`Feed`、`Feed`的投票、`Feed`的分页等，其中主要代码参考了 [HowToGraphQL](https://www.howtographql.com/) 这个项目中的相关实现，项目主要分为以下几个部分：
+该系列项目实现了一个简易的`Hackernews Demo`，包括服务端与客户端，主要是个人用来熟悉 `GraphQL` 相关开发环境与生态的练手项目，实现的功能包括`用户注册以及登陆`、`Feed`、`Feed的投票`、`Feed的分页`等，其中主要代码参考了 [HowToGraphQL](https://www.howtographql.com/) 这个项目中的相关实现，项目主要分为以下几个部分：
 
 - Hackernews Demo
   - Server
