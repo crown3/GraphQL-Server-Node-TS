@@ -65,7 +65,7 @@ testing s provided, `https://us1.prisma.sh/crown-a144e9/demo-hackernews/dev`
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./.github/CONTRIBUTing.md) for details on our code
+Please read [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for details on our code
 of conduct, and the process for submitting pull requests to.
 
 ## Versioning
