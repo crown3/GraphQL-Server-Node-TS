@@ -2,13 +2,7 @@
 
 [![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.graqhql-server-demo-node-ts?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=5&branchName=master)
 
-The series of projects implements a simple `Hackernews Demo`,including server
-and client, mainlyfor individuals to familiarize themselves with the development
-environment and ecology of `GraphQL`. The functions implemented include user
-registration and login, feed, feed voting, and the pagination of feed , etc. The
-main code refers to the relevant implementation of the
-[HowToGraphQL](https://www.howtographql.com) project, the series of projects is
-mainly divided into the follwing parts:
+该系列项目实现了一个简易的`Hackernews Demo`，包括服务端与客户端，主要是个人用来熟悉 `GraphQL` 相关开发环境与生态的练手项目，实现的功能包括用户注册以及登陆、`Feed`、`Feed`的投票、`Feed`的分页等，其中主要代码参考了 [HowToGraphQL](https://www.howtographql.com/) 这个项目中的相关实现，项目主要分为以下几个部分：
 
 - Hackernews Demo
   - Server
@@ -18,31 +12,29 @@ mainly divided into the follwing parts:
 
 ![](./assets/190516_090038162.png)
 
-## Getting Started
+## 如何开始
 
-**NOte:** there is only an introduction to how the server code run. If you want
-to see the entire project, you need to go to another repository to install the
-relevant client code, such as [the Web using React](https://github.com/crown3/GraphQL-Client-React-TS)
+注意，这里只有关于服务端代码如何运行的介绍，如果你要查看完整的整个项目，你还需要去到另外的仓库中安装相关的客户端代码，例如[`Web using react`](https://github.com/crown3/GraphQL-Client-React-TS)
 
-### Prerequisites
+### 运行环境
 
-You only need to provide the `Node`'s running environment, there is mine:
+你只需要提供`Node`的运行环境即可，我的`Node`版本：
 
 ```bash
 ❯❯❯ node -v
 v10.15.0
 ```
 
-### Installing
+### 安装
 
-Install the dependencies, open the browser URL of the prompt, such as `http://localhost:3000`:
+安装相关依赖，打开提示的浏览器网址，例如`http://localhost:3000`：
 
 ```bash
 yarn install
 yarn dev
 ```
 
-The introduction of other scripts:
+其它运行脚本介绍:
 
 ```json
 {
@@ -57,16 +49,15 @@ The introduction of other scripts:
 }
 ```
 
-**Note:** the relevant code in the `src/generated` folder is automatically
-generated, don't modify. `src/genereted/prisma-client` is generated according to
-the relevant configuration in your `prisma`. After modifying the related files
-in `prisma`, remember to run `yarn prisma:deploy`. By default, a cloud node for
-testing s provided, `https://us1.prisma.sh/crown-a144e9/demo-hackernews/dev`
+注意：`src/generated`这个文件夹里面的相关代码全是自动生成的，不要修改，其中`src/generated/prisma-client`是根据你的 `prisma`里的相关配置来生成，在修改了 `prisma` 中的相关文件后，记得运行`yarn prisma:deploy`。这里默认提供了一个测试使用的云端节点`https://us1.prisma.sh/crown-a144e9/demo-hackernews/dev`
+
+## 运行测试
+
+目前还没有相关测试文件...
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./.github/CONTRIBUTing.md) for details on our code
-of conduct, and the process for submitting pull requests to.
+Please read [CONTRIBUTING.md](./.github/CONTRIBUTing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
@@ -84,4 +75,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 
 ## Acknowledgments
 
-- Again, this is just a `Demo Project`
+- 再次声明，这只是一个`Demo Project`
