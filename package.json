@@ -2,7 +2,7 @@
   "name": "graqhql-server-demo-node-ts",
   "version": "1.0.0",
   "main": "index.ts",
-  "repository": "git@github.com:crown3/graqhql-server-demo-node-ts.git",
+  "repository": "git@github.com:crown3/GraqhQL-Server-Node-TS.git",
   "author": "crown <chenjuncrown@gmail.com>",
   "license": "MIT",
   "scripts": {

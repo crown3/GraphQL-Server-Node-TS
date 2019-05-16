@@ -1,12 +1,12 @@
 # A Hackernews Demo Server Using TS, Node, GraphQL
 
-[![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.graqhql-server-demo-node-ts?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=5&branchName=master)
+[![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.GraqhQL-Server-Node-TS?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=5&branchName=master)
 
 该系列项目实现了一个简易的`Hackernews Demo`，包括服务端与客户端，主要是个人用来熟悉 `GraphQL` 相关开发环境与生态的练手项目，实现的功能包括用户注册以及登陆、`Feed`、`Feed`的投票、`Feed`的分页等，其中主要代码参考了 [HowToGraphQL](https://www.howtographql.com/) 这个项目中的相关实现，项目主要分为以下几个部分：
 
 - Hackernews Demo
   - Server
-    - [`Node`](https://github.com/crown3/GraqhQL-Server-Demo-Node-TS): implement with `graphql-yoga`, `prisma`, `ts`
+    - [`Node`](https://github.com/crown3/GraqhQL-Server-Node-TS): implement with `graphql-yoga`, `prisma`, `ts`
   - Client
     - [`React`](https://github.com/crown3/GraphQL-Client-React-TS): implement with `react-apollo`, `react`, `ts`
 
@@ -61,13 +61,13 @@ Please read [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for details on our code
 
 ## Versioning
 
-We use [semantic-release](https://github.com/semantic-release/semantic-release#readme) for versioning. For the versions available, see the [tags on this repository](https://github.com/crown3/GraqhQL-Server-Demo-Node-TS/tags).
+We use [semantic-release](https://github.com/semantic-release/semantic-release#readme) for versioning. For the versions available, see the [tags on this repository](https://github.com/crown3/GraqhQL-Server-Node-TS/tags).
 
 ## Authors
 
 - **Crown Chen** - [Crown](https://github.com/crown3)
 
-See also the list of [contributors](https://github.com/crown3/GraqhQL-Server-Demo-Node-TS/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/crown3/GraqhQL-Server-Node-TS/contributors) who participated in this project.
 
 ## License
 

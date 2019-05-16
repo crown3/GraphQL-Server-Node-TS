@@ -1,6 +1,6 @@
 # A Hackernews Demo Server Using TS, Node, GraphQL
 
-[![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.graqhql-server-demo-node-ts?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=5&branchName=master)
+[![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.GraqhQL-Server-Node-TS?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=10&branchName=master)
 
 The series of projects implements a simple `Hackernews Demo`,including server
 and client, mainlyfor individuals to familiarize themselves with the development
@@ -12,7 +12,7 @@ mainly divided into the follwing parts:
 
 - Hackernews Demo
   - Server
-    - [`Node`](https://github.com/crown3/GraqhQL-Server-Demo-Node-TS): implement with `graphql-yoga`, `prisma`, `ts`
+    - [`Node`](https://github.com/crown3/GraqhQL-Server-Node-TS): implement with `graphql-yoga`, `prisma`, `ts`
   - Client
     - [`React`](https://github.com/crown3/GraphQL-Client-React-TS): implement with `react-apollo`, `react`, `ts`
 
@@ -74,13 +74,13 @@ of conduct, and the process for submitting pull requests to.
 
 ## Versioning
 
-We use [semantic-release](https://github.com/semantic-release/semantic-release#readme) for versioning. For the versions available, see the [tags on this repository](https://github.com/crown3/GraqhQL-Server-Demo-Node-TS/tags).
+We use [semantic-release](https://github.com/semantic-release/semantic-release#readme) for versioning. For the versions available, see the [tags on this repository](https://github.com/crown3/GraqhQL-Server-Node-TS/tags).
 
 ## Authors
 
 - **Crown Chen** - [Crown](https://github.com/crown3)
 
-See also the list of [contributors](https://github.com/crown3/GraqhQL-Server-Demo-Node-TS/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/crown3/GraqhQL-Server-Node-TS/contributors) who participated in this project.
 
 ## License
 
