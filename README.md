@@ -2,6 +2,8 @@
 
 [![Build Status](https://dev.azure.com/crown0938/Github/_apis/build/status/crown3.GraphQL-Server-Node-TS?branchName=master)](https://dev.azure.com/crown0938/Github/_build/latest?definitionId=10&branchName=master)
 
+[English](./README.md) | [中文](./README.zh-CN.md)
+
 The series of projects implements a simple `Hackernews Demo`,including server
 and client, mainlyfor individuals to familiarize themselves with the development
 environment and ecology of `GraphQL`. The functions implemented include `user registration and login`, `feed`, `feed voting`, and `the pagination of feed` ,
