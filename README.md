@@ -35,7 +35,7 @@ v10.15.0
 
 ### Installing
 
-Install the dependencies, open the browser URL of the prompt, such as `http://localhost:3000`:
+Install the dependencies, open the browser URL of the prompt, such as `http://localhost:4000`:
 
 ```bash
 yarn install
@@ -62,6 +62,10 @@ generated, don't modify. `src/genereted/prisma-client` is generated according to
 the relevant configuration in your `prisma`. After modifying the related files
 in `prisma`, remember to run `yarn prisma:deploy`. By default, a cloud node for
 testing s provided, `https://us1.prisma.sh/crown-a144e9/demo-hackernews/dev`
+
+## Running the tests
+
+There are currently no related test files...
 
 ## Contributing
 

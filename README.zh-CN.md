@@ -27,7 +27,7 @@ v10.15.0
 
 ### 安装
 
-安装相关依赖，打开提示的浏览器网址，例如`http://localhost:3000`：
+安装相关依赖，打开提示的浏览器网址，例如`http://localhost:4000`：
 
 ```bash
 yarn install
