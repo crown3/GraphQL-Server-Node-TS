@@ -1,6 +1,6 @@
 {
   "name": "graphql-server-demo-node-ts",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.ts",
   "author": "crown <chenjuncrown@gmail.com>",
   "repository": "git@github.com:crown3/GraphQL-Server-Node-TS.git",
