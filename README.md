@@ -19,7 +19,7 @@ mainly divided into the follwing parts:
 
 ## Getting Started
 
-**NOte:** there is only an introduction to how the server code run. If you want
+**Note:** there is only an introduction to how the server code run. If you want
 to see the entire project, you need to go to another repository to install the
 relevant client code, such as [the Web using React](https://github.com/crown3/GraphQL-Client-React-TS)
 
