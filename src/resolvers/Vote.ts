@@ -1,21 +1,14 @@
-import {
-  LinkWhereUniqueInput,
-  UserWhereUniqueInput,
-} from '../generated/prisma-client'
-import { Context } from './types/Context'
+import { VoteResolvers } from 'generated/resolvers'
+import { TypeMap } from './types/TypeMap'
 
-export function link(
-  parent: LinkWhereUniqueInput,
-  args: null | undefined,
-  context: Context
-) {
-  return context.prisma.vote({ id: parent.id }).link()
+export interface VoteParent {
+  id: string
+  // link: LinkParent
+  // user: UserParent
 }
 
-export function user(
-  parent: UserWhereUniqueInput,
-  args: null | undefined,
-  context: Context
-) {
-  return context.prisma.vote({ id: parent.id }).user()
+export const Vote: VoteResolvers.Type<TypeMap> = {
+  id: parent => parent.id,
+  link: (parent, args, ctx) => ctx.prisma.vote({ id: parent.id }).link(),
+  user: (parent, args, ctx) => ctx.prisma.vote({ id: parent.id }).user(),
 }

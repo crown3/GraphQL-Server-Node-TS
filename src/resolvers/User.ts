@@ -1,10 +1,16 @@
-import { UserWhereUniqueInput } from '../generated/prisma-client'
-import { Context } from './types/Context'
+import { UserResolvers } from 'generated/resolvers'
+import { TypeMap } from './types/TypeMap'
 
-export function links(
-  parent: UserWhereUniqueInput,
-  args: null | undefined,
-  context: Context
-) {
-  return context.prisma.user({ id: parent.id }).links()
+export interface UserParent {
+  id: string
+  name: string
+  email: string
+  // links: LinkParent[]
+}
+
+export const User: UserResolvers.Type<TypeMap> = {
+  id: parent => parent.id,
+  name: parent => parent.name,
+  email: parent => parent.email,
+  links: (parent, args, ctx) => ctx.prisma.user({ id: parent.id }).links(),
 }

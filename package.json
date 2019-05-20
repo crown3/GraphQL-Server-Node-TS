@@ -10,6 +10,7 @@
     "lint": "eslint --ext .ts,.tsx src",
     "dev": "ts-node src/index.ts",
     "dev:watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec yarn dev",
+    "generate-resolvers": "graphql-resolver-codegen interfaces -s src/schema.graphql -o src/generated/resolvers.ts",
     "prisma:deploy": "export NO_PROXY=*; prisma deploy",
     "prisma:generate": "prisma generate"
   },
@@ -62,6 +63,7 @@
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "graphql-resolver-codegen": "0.3.1",
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
     "nodemon": "^1.19.0",

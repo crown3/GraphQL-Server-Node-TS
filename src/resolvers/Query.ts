@@ -1,42 +1,33 @@
-import { LinkOrderByInput, LinkWhereInput } from '../generated/prisma-client'
-import { Context } from './types/Context'
+import { QueryResolvers } from 'generated/resolvers'
+import { TypeMap } from './types/TypeMap'
 
-export function info() {
-  return 'Hello world!!!'
-}
+export const Query: QueryResolvers.Type<TypeMap> = {
+  info: () => 'hello world',
+  feed: async (parent, args, ctx) => {
+    const where = args.filter
+      ? {
+          OR: [
+            { description_contains: args.filter },
+            { url_contains: args.filter },
+          ],
+        }
+      : {}
 
-// Disable sort by id, because we had limited that in schema.graphql
-interface FeedArgs {
-  filter?: string
-  skip?: number
-  first?: number
-  orderBy?: Exclude<LinkOrderByInput, 'id_ASC' | 'id_DESC'>
-}
-export async function feed(
-  parent: null | undefined,
-  args: FeedArgs,
-  context: Context
-) {
-  const where: LinkWhereInput = args.filter
-    ? {
-        OR: [
-          { description_contains: args.filter },
-          { url_contains: args.filter },
-        ],
-      }
-    : {}
-  const links = await context.prisma.links({
-    where,
-    skip: args.skip,
-    first: args.first,
-    orderBy: args.orderBy,
-  })
-  const count = await context.prisma
-    .linksConnection({ where })
-    .aggregate()
-    .count()
-  return {
-    links,
-    count,
-  }
+    const links = await ctx.prisma.links({
+      where,
+      skip: args.skip,
+      first: args.first,
+      orderBy: args.orderBy,
+    })
+
+    const count = await ctx.prisma
+      .linksConnection({ where })
+      .aggregate()
+      .count()
+
+    return {
+      links,
+      count,
+    }
+  },
 }

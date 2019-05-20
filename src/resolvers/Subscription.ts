@@ -1,35 +1,11 @@
-import {
-  LinkSubscriptionPayload,
-  VoteSubscriptionPayload,
-} from '../generated/prisma-client'
-import { Context } from './types/Context'
+import { SubscriptionResolvers } from 'generated/resolvers'
+import { TypeMap } from './types/TypeMap'
 
-function newLinkSubscribe(
-  parent: null | undefined,
-  args: null | undefined,
-  context: Context
-) {
-  return context.prisma.$subscribe.link({ mutation_in: ['CREATED'] }).node()
-}
-
-export const newLink = {
-  subscribe: newLinkSubscribe,
-  resolve: (payload: LinkSubscriptionPayload) => {
-    return payload
+export const Subscription: SubscriptionResolvers.Type<TypeMap> = {
+  newLink: (parent, args, ctx) => {
+    return ctx.prisma.$subscribe.link({ mutation_in: ['CREATED'] }).node()
   },
-}
-
-function newVoteSubscribe(
-  parent: null | undefined,
-  args: null | undefined,
-  context: Context
-) {
-  return context.prisma.$subscribe.vote({ mutation_in: ['CREATED'] }).node()
-}
-
-export const newVote = {
-  subscribe: newVoteSubscribe,
-  resolve: (payload: VoteSubscriptionPayload) => {
-    return payload
+  newVote: (parent, args, ctx) => {
+    return ctx.prisma.$subscribe.vote({ mutation_in: ['CREATED'] }).node()
   },
 }
