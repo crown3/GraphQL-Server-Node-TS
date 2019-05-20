@@ -10,9 +10,8 @@
     "lint": "eslint --ext .ts,.tsx src",
     "dev": "ts-node src/index.ts",
     "dev:watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec yarn dev",
-    "generate-resolvers": "graphql-resolver-codegen interfaces -s src/schema.graphql -o src/generated/resolvers.ts",
-    "prisma:deploy": "export NO_PROXY=*; prisma deploy",
-    "prisma:generate": "prisma generate"
+    "prisma": "cd prisma && prisma",
+    "generate-resolvers": "graphql-resolver-codegen interfaces -s src/schema.graphql -o src/generated/resolvers.ts"
   },
   "prettier": {
     "printWidth": 80,

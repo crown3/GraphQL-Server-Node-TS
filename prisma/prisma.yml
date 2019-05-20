@@ -13,3 +13,4 @@ generate:
 hooks:
   post-deploy:
     - prisma generate
+    - generate-resolvers
