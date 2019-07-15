@@ -1,5 +1,5 @@
 /* DO NOT EDIT! */
-import { GraphQLResolveInfo } from 'graphql'
+import { GraphQLResolveInfo } from 'graphql';
 
 export interface ITypeMap {
   Context: any

@@ -70,7 +70,6 @@ yarn dev
 ```jsonc
 {
   "scripts": {
-    "cz": "git-cz", // Standardize your commit message, please use `yarn cz` instead of `git commit ...` after `git add`
     "lint": "eslint --ext .ts,.tsx src", // lint your code
     "dev": "ts-node src/index.ts",
     "dev:watch": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec yarn dev", // run dev with watching mode
